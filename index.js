@@ -40,7 +40,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use('/api', apiRouter);
 
 
-app.set('PORT', 3000);
+app.set('PORT', process.env.PORT || 3000);
 
 // normalmente el backend se corre el puerto 3000
 app.listen(app.get('PORT'), () => {
