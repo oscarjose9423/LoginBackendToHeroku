@@ -20,8 +20,7 @@ exports.login = async(req, res, next) =>{
                     name: user.nombre,
                     email: user.email,
                     rol: user.rol
-                },
-                'config.secret', {
+                }, 'config.secret', {
                     expiresIn: 86400,
                 }
                 );
