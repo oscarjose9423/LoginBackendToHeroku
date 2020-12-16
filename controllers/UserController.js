@@ -28,7 +28,7 @@ exports.login = async(req, res, next) =>{
                 res.status(200).send({
                     auth: true,
                     tokenReturn: token,
-                    user: user
+                    // user: user //no es necesario si no se estaria enviando la contraseña al front y el head y todo
                 })
             }else{
                 res.status(401).json({
