@@ -6,9 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index",
-    
-
-    
     "start": "node index.js"
   },
   "keywords": [],
@@ -26,6 +23,7 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "sequelize-cli": "^6.2.0"
   }
 }
